@@ -1,0 +1,55 @@
+/* -------------------------------------reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* -------------------------------------header */
+header{
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkslategray;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.header-left{
+  margin-left: 20px;
+}
+.logo{
+  text-decoration: none;
+  color: white;
+  font-size: 36px;
+  letter-spacing: 1px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header-right{
+  margin-right: 20px;
+}
+.menu-ul{
+  display: flex;
+  list-style: none;
+}
+.menu-li{
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  
+}
+.wrapper{
+  padding: 20px;
+}
+/* ------------------------------------- */
+/* -------------------------------------all font */
+p{
+  font-size: 20px;
+}
+.menu-li,h1,p{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* ----------------------------------multi devise */
+@media (max-width: 600px) {
+
+}
