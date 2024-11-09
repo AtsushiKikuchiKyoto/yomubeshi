@@ -52,4 +52,5 @@ production:
   <<: *default
   database: yomubeshi_production
   username: yomubeshi
-  password: <%= ENV["YOMUBESHI_DATABASE_PASSWORD"] %>
+  password: <%= ENV["DATABASE_PASSWORD"] %>
+  socket: /var/lib/mysql/mysql.sock
