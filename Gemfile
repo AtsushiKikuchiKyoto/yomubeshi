@@ -80,3 +80,5 @@ group :production do
   gem 'unicorn', '6.1.0'
 end
 gem "aws-sdk-s3", require: false
+gem 'mini_magick'
+gem 'image_processing', '~> 1.2'
