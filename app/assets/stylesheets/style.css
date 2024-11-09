@@ -76,11 +76,25 @@ header{
   color: white;
   background-color: darkslategray;
 }
+/* -------------------------------------top page */
+.books-area{
+  background-color: lightgray;
+  margin: 30px;
+}
+.book-image{
+  width: 300px;
+}
+.book-name{
+  font-size: 20px;
+}
+.book-text{
+  font-size: 16px;
+}
 /* -------------------------------------all font */
 p{
   font-size: 20px;
 }
-.menu-li,h1,h2,p,.label-form,.book-form{
+.menu-li,h1,h2,p,.label-form,.book-form,.book-name,.book-text{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   /* color: red; */
 }
