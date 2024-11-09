@@ -1,2 +1,13 @@
 <h1>「よむべし」な本を投稿</h1>
 <h2>このWebページは、自分の人生を大きく変えた本を、自分独自の解釈を添えて、<%= 3 %>つまでランキング形式で投稿できるものです。</h2>
+<div class="books-area">
+  <% @books.each do |book| %>
+    <%= image_tag book.image.variant(resize: '500x500'), class:"book-image" %>
+    <div class="book-name">
+      <%= book.name %>
+    </div>
+    <div class="book-text">
+      <%= book.text %>
+    </div>
+  <% end %>
+</div>

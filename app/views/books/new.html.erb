@@ -1,0 +1,15 @@
+<h1>「よむべし」な本を投稿</h1>
+<h2>以下のフォームから登録しましょう</h2>
+<%= form_with model: @book, local: true, class: "book-form" do |f| %>
+
+  <%= f.label :image, class: "label-form" %>
+  <%= f.file_field :image, class: "file-button" %>
+
+  <%= f.label :name, class: "label-form" %>
+  <%= f.text_field :name, placeholder: "本のタイトル", class: "text-field-name" %>
+
+  <%= f.label :text, class: "label-form" %>
+  <%= f.text_area :text, placeholder: "自分独自の解釈を書き綴ってください", rows: "10", class: "text-field-text" %>
+
+  <%= f.submit "SEND", class: "form-submit" %>
+<% end %>
