@@ -17,7 +17,7 @@ namespace :deploy do
     invoke 'unicorn:restart'
   end
 end
-append :linked_files, 'current/config/storage.yml', 'current/config/master.key'
+append :linked_files, '../current/config/storage.yml', '../current/config/master.key'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
